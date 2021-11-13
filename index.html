@@ -5,21 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr Ness</title>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css" integrity="sha512-4wfcoXlib1Aq0mUtsLLM74SZtmB73VHTafZAvxIp/Wk9u1PpIsrfmTvK0+yKetghCL8SHlZbMyEcV8Z21v42UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <div id="wrap">
-        <div id="header">
-            <h1>Mr Ness</h1>
-        </div> <!-- header-->
-        <div id="main">
-            <div id="article">
-                <p>Eccomi qui. A scrivere con la mia nuova tastiera meccanica le righe di quello che diventer&aacute; il mio nuovo sito. <br />
-                </p>
-            </div> <!-- article-->
-        </div> <!-- main-->
-        <div id="footer">
-            &copy;2021 Mr Ness 
+    <header>
+        <div class="logo">
+          <img src="img/logo.png" alt="">
         </div>
-    </div> <!-- wrap-->
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home">Home</a></li>
+            <li class="nav__item"><a href="#">Chi sono</a></li>
+            <li class="nav__item"><a href="#">Bookmark</a></li>
+            <li class="nav__item"><a href="#">Risorse</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="intro" id="home">
+      <h1 class="section__title">
+        Ciao, sono <strong>Mr Ness</strong>
+      </h1>
+      <p class="section__subtitle">
+        imparo cose e ne parlo su questo sito. 
+      </p>
+    </section>
+    <!-- Articolo-->
+    <section class="article" id="pag1">
+      <h2 class="article__title">
+        Inizia cos&iacute;
+      </h2>
+      <p class="article__content">
+        Questo sar&abreve; il primo post del blog. <br /><br />
+        Qui tutto &eacute; scritto a manina, come si faceva una volta. Niente CMS o generatori di siti statici. 
+      </p>
+    </section>
+    <!-- Fine Articolo-->
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer__text">
+        - Mr Ness 2021 - 
+      </p>
+      <a href="mailto:mrness@gmail.com" class="footer__link">mrness@gmail.com</a>
+    </footer>
   </body>
 </html>
