@@ -1,0 +1,67 @@
+# baseURL locale; in produzione il workflow lo sovrascrive con l'URL di GitHub Pages
+baseURL: http://localhost:1313/
+locale: it-it
+defaultContentLanguage: it
+title: Il blog di Daniele
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+pagination:
+  pagerSize: 10
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home: [HTML, RSS, JSON]   # JSON serve alla ricerca
+
+params:
+  env: production
+  title: Il blog di Daniele
+  description: Appunti su Linux, codice e quello che mi capita di sperimentare.
+  author: Daniele
+  defaultTheme: auto        # chiaro/scuro in base al sistema
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  DateFormat: "2 January 2006"
+
+  homeInfoParams:
+    Title: Ciao 👋
+    Content: Benvenuto nel mio blog personale.
+
+  socialIcons:
+    - name: github
+      url: https://github.com/danieleflorio
+    - name: rss
+      url: index.xml
+
+  fuseOpts:
+    keys: [title, permalink, summary, content]
+
+menu:
+  main:
+    - name: Archivio
+      url: archives/
+      weight: 10
+    - name: Tag
+      url: tags/
+      weight: 20
+    - name: Cerca
+      url: search/
+      weight: 30
+    - name: Chi sono
+      url: about/
+      weight: 40
+
+markup:
+  highlight:
+    noClasses: false
